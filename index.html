@@ -10,13 +10,15 @@
     <meta property="og:image" content="URL_REAL_DA_IMAGEM">
     <meta property="og:url" content="URL_REAL_DA_PAGINA">
     <meta property="og:type" content="website">
+
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap');
         
         body {
             font-family: 'Montserrat', sans-serif;
             text-align: center;
-            background: url('https://raw.githubusercontent.com/hmrh037/back/refs/heads/main/DALL%C2%B7E%202025-02-19%2016.47.11%20-%20A%20dark%20and%20professional%20background%20image%20for%20a%20forensic%20pathology%20course%20webpage.%20The%20design%20should%20have%20deep%20shades%20of%20black%2C%20gray%2C%20and%20dark%20blue%2C%20wi.webp') no-repeat center center fixed;
+            /* ALTERAÇÃO: substitua 'URL_DA_IMAGEM_GERADA' pelo caminho real ou URL da sua nova imagem */
+            background: url('URL_DA_IMAGEM_GERADA') no-repeat center center fixed; 
             background-size: cover;
             color: #fff;
             padding: 0;
@@ -192,7 +194,7 @@
            class="btn-whatsapp"
            aria-label="Fale conosco no WhatsApp">
             <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
-             SOLICITAR ORÇAMENTO
+            SOLICITAR ORÇAMENTO
         </a>
         <p class="footer">🚨 Atenção: Orçamentos gratuitos e sem compromisso! 🚨</p>
     </div>
@@ -239,44 +241,5 @@
             });
         }
     </script>
-
-<!-- Code injected by live-server -->
-<script>
-	// <![CDATA[  <-- For SVG support
-	if ('WebSocket' in window) {
-		(function () {
-			function refreshCSS() {
-				var sheets = [].slice.call(document.getElementsByTagName("link"));
-				var head = document.getElementsByTagName("head")[0];
-				for (var i = 0; i < sheets.length; ++i) {
-					var elem = sheets[i];
-					var parent = elem.parentElement || head;
-					parent.removeChild(elem);
-					var rel = elem.rel;
-					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
-						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
-						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
-					}
-					parent.appendChild(elem);
-				}
-			}
-			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
-			var address = protocol + window.location.host + window.location.pathname + '/ws';
-			var socket = new WebSocket(address);
-			socket.onmessage = function (msg) {
-				if (msg.data == 'reload') window.location.reload();
-				else if (msg.data == 'refreshcss') refreshCSS();
-			};
-			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
-				console.log('Live reload enabled.');
-				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
-			}
-		})();
-	}
-	else {
-		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
-	}
-	// ]]>
-</script>
 </body>
 </html>
