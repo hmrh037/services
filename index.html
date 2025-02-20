@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviços Domésticos - Orçamento Gratuito!</title>
+    <meta name="description" content="Oferecemos diversos serviços para o seu domicílio, incluindo jardinagem, montagem de móveis, higienização, manutenção elétrica e hidráulica, e muito mais. Solicite seu orçamento!">
+    <meta property="og:title" content="Serviços Domésticos - Orçamento Gratuito!">
+    <meta property="og:description" content="Oferecemos diversos serviços para o seu domicílio, incluindo jardinagem, montagem de móveis, higienização, manutenção elétrica e hidráulica, e muito mais. Solicite seu orçamento!">
+    <meta property="og:image" content="URL_REAL_DA_IMAGEM">
+    <meta property="og:url" content="URL_REAL_DA_PAGINA">
+    <meta property="og:type" content="website">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap');
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            text-align: center;
+            background: url('https://raw.githubusercontent.com/hmrh037/back/refs/heads/main/DALL%C2%B7E%202025-02-19%2016.47.11%20-%20A%20dark%20and%20professional%20background%20image%20for%20a%20forensic%20pathology%20course%20webpage.%20The%20design%20should%20have%20deep%20shades%20of%20black%2C%20gray%2C%20and%20dark%20blue%2C%20wi.webp') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            flex-direction: column;
+            padding-bottom: 80px; /* Adiciona espaço extra na parte inferior */
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 700px;
+            background: rgba(0, 102, 204, 0.9);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 102, 204, 0.5);
+            text-align: center;
+            animation: fadeIn 1s ease-in-out;
+            margin-bottom: 20px; /* Adiciona espaço entre o container e o botão de compartilhamento */
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        h1 {
+            color: #fff;
+            font-size: 32px;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+        
+        p {
+            font-size: 18px;
+            color: #fff;
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+        
+        .services {
+            list-style: none;
+            padding: 0;
+            margin: 25px 0;
+        }
+        
+        .services li {
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            transition: transform 0.2s;
+        }
+        
+        .services li:hover {
+            transform: scale(1.05);
+        }
+        
+        .cta {
+            font-size: 22px;
+            font-weight: bold;
+            margin-top: 25px;
+            color: #fff;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); box-shadow: 0 0 10px rgba(0, 102, 204, 0.6); }
+            50% { transform: scale(1.08); box-shadow: 0 0 25px rgba(0, 102, 204, 0.9); }
+            100% { transform: scale(1); box-shadow: 0 0 10px rgba(0, 102, 204, 0.6); }
+        }
+
+        .btn-whatsapp {
+            display: inline-flex;
+            align-items: center;
+            background: #25D366;
+            color: white;
+            padding: 15px 28px;
+            font-size: 20px;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: bold;
+            transition: background 0.3s;
+            box-shadow: 0 5px 15px rgba(37, 211, 102, 0.5);
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+            animation: pulse 1.5s infinite;
+        }
+        
+        .btn-whatsapp img {
+            width: 22px;
+            margin-right: 8px;
+        }
+        
+        .btn-whatsapp:hover {
+            background: #1a8f4a;
+        }
+        
+        .footer {
+            margin-top: 30px;
+            font-size: 16px;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        /* Estilos para o botão de compartilhamento */
+        .share-container {
+            margin-top: 20px;
+            text-align: center;
+            margin-bottom: 80px; /* Adiciona espaço extra na parte inferior */
+        }
+        .share-btn {
+            background: #25D366;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .share-btn:hover {
+            background: #1a8f4a;
+        }
+        .share-links {
+            margin-top: 10px;
+            font-size: 16px;
+        }
+        .share-links a, .share-links button {
+            margin: 5px;
+            text-decoration: none;
+            color: white;
+            background: #333;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .share-links button {
+            border: none;
+        }
+        .share-links a:hover, .share-links button:hover {
+            background: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="titulo">👨‍🌾 Serviços Domésticos - Orçamento Gratuito! 👨‍🔧</h1>
+        <p><strong>Oferecemos os seguintes serviços e reparos para o seu domicílio:</strong></p>
+        <ul class="services" aria-labelledby="titulo">
+            <li>🌿 Jardinagem</li>
+            <li>🛠️ Montagem de móveis</li>
+            <li>🧼 Higienização de sofás e colchões</li>
+            <li>🪟 Instalação de cortinas</li>
+            <li>🔌 Manutenção elétrica e hidráulica domiciliar em geral</li>
+            <li>🚿 Instalação e substituição de chuveiros, torneiras, fechaduras e trancas de portas</li>
+            <li>🚪 Ajuste e manutenção de janelas, portas e fechaduras</li>
+            <li>🚗 Higienização detalhada de veículos</li>
+            <li>🖼️ Colocação de quadros e nichos em paredes</li>
+            <li>🎨 Serviços de pintura</li>
+            <li>🕸️ Instalação de redes de proteção em janelas e sacadas</li>
+            <li>🧺 Manutenção de máquinas de lavar roupa</li>
+        </ul>
+        <p class="cta">📞 Solicite seu orçamento agora mesmo! Clique no botão abaixo:</p>
+        <a href="https://api.whatsapp.com/send?phone=5546991090533&text=Olá,%20gostaria%20de%20solicitar%20um%20orçamento!" 
+           class="btn-whatsapp"
+           aria-label="Fale conosco no WhatsApp">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+             SOLICITAR ORÇAMENTO
+        </a>
+        <p class="footer">🚨 Atenção: Orçamentos gratuitos e sem compromisso! 🚨</p>
+    </div>
+
+    <!-- Botão de compartilhamento e frase -->
+    <div class="share-container">
+        <p>Se conhecer alguém que pode se interessar, compartilhe! 👇</p>
+        <button class="share-btn" onclick="sharePage()">🔗 Compartilhar</button>
+    </div>
+
+    <script>
+        function sharePage() {
+            const pageUrl = window.location.href;
+            const pageTitle = document.title;
+            const shareText = `Confira estes serviços: ${pageTitle} - ${pageUrl}`;
+
+            if (navigator.share) {
+                navigator.share({
+                    title: pageTitle,
+                    text: shareText,
+                    url: pageUrl
+                }).then(() => console.log('Compartilhado com sucesso!'))
+                  .catch((error) => console.log('Erro ao compartilhar:', error));
+            } else {
+                const whatsappUrl = `https://api.whatsapp.com/send?text=${encodeURIComponent(shareText)}`;
+                const facebookUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(pageUrl)}`;
+                const copyText = `Serviços incríveis! Confira: ${pageUrl}`;
+
+                let shareOptions = `
+                    <a href="${whatsappUrl}" target="_blank">📲 WhatsApp</a> | 
+                    <a href="${facebookUrl}" target="_blank">📘 Facebook</a> | 
+                    <button onclick="copyToClipboard('${copyText}')">📋 Copiar Link</button>
+                `;
+                
+                document.querySelector('.share-container').innerHTML += `<div class="share-links">${shareOptions}</div>`;
+            }
+        }
+
+        function copyToClipboard(text) {
+            navigator.clipboard.writeText(text).then(() => {
+                alert('Link copiado para a área de transferência!');
+            }).catch(err => {
+                console.error('Erro ao copiar:', err);
+            });
+        }
+    </script>
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+</html>
